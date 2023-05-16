@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!--cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Landing Page Design</title>
+</head>
+
+<body>
+  <header>
+    <a href="" class="logo"><img src="/img/netflix-logo.png"></a>
+
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tv Shows</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">Lastest</a></li>
+      <li><a href="#">My List</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Search">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="banner">
+        <img src="/img/gojo-wallpaper.jpg" class="bg">
+        <div class="content">
+          <h2>Jujut Kaisen</h2>
+          <h4>
+            <span>2023</span>
+            <span> <i>16+</i></span>
+            <span>1h 45min</span>
+            <span>Shonen</span>
+          </h4>
+          <p>Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.</p>
+
+          <div class="buttons">
+            <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+          </div>
+        </div>
+        <a class="play" onclick="toggleVideo();"><i class='bx bx-play-circle'></i>Watch Trailer</a>
+      </div>
+
+      <div class="trailer">
+        <video src="/img/JUJUTSU KAISEN-TRAILER OFICIAL.mp4" controls="true" autoplay="true"></video>
+        <i class='bx bx-x close' onclick="toggleVideo();"></i>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
